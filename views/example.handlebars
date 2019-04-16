@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10 offset-2 mx-auto">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h2 id="article-header" class="card-title">{{note.note_name}}</h2>
+
+
+          <img src="/uploads/{{note.noteImage}}" id="note-full-image" class="img-fluid"/>
+          <h4>News sites:</h4>
+          <p>
+              {{#each note.article}}
+                <p>{{name}} — {{header}}</p>
+              {{/each}}
+          </p>
+
+          <h4>Directions:</h4>
+          <pre><p>{{note.body}}</p></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
